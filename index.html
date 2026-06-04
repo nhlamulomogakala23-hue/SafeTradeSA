@@ -3,158 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeTrade SA | Secure C2C Marketplace</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for clean e-commerce icons -->
+    <title>SafeTradeSA - Secure C2C Trade & Escrow</title>
+    <link rel="stylesheet" href="sadetrade-3d-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Shopify-style Top Announcement Bar -->
     <div class="announcement-bar">
-        <p>🔒 Guarding South African Informal Trades with Escrow Protection</p>
+        <p>Empowering South African Informal Traders with 100% Secure Escrow Payments</p>
     </div>
 
-    <!-- Header Navigation -->
     <header class="main-header">
         <div class="header-container">
-            <!-- Logo Area referencing your brand image -->
             <div class="logo">
-                <img src="assets/img/logo.png" alt="SafeTrade SA Logo">
+                <img src="assets/img/logo.png" alt="SafeTradeSA Logo">
             </div>
-            
-            <!-- Navigation Links -->
-            <nav class="nav-menu">
+            <nav class="nav-links">
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Browse Trades</a></li>
-                    <li><a href="#">Verify Profile</a></li>
+                    <li><a href="#">Browse Marketplace</a></li>
+                    <li><a href="#">Verify Trader</a></li>
                     <li><a href="#">Help & Support</a></li>
                 </ul>
             </nav>
-
-            <!-- E-commerce Utility Icons -->
-            <div class="header-icons">
-                <a href="#" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#" title="Account/Profile"><i class="fa-regular fa-user"></i></a>
-                <a href="#" class="cart-icon" title="My Trades"><i class="fa-solid fa-handshake"></i><span class="badge">0</span></a>
+            <div class="header-actions">
+                <a href="#" class="icon-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="icon-link"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="cta-nav-btn">Start Trading</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
-            <span class="hero-tagline">Secure. Verified. Transparent.</span>
-            <h1>The Safest Way to Trade & Buy Online in SA</h1>
-            <p>Emporing informal traders and everyday buyers with foolproof escrow protection and fully verified user profiles.</p>
+            <h1>Trade with absolute confidence.</h1>
+            <p>The secure C2C marketplace built specifically for South African informal traders. Protect your money and your goods with verified user tracking and trusted escrow payments.</p>
             <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Start Trading Safely</a>
-                <a href="#" class="btn btn-secondary">Learn More</a>
+                <a href="#" class="btn-primary">Explore Marketplace</a>
+                <a href="#" class="btn-secondary">How Escrow Works</a>
             </div>
         </div>
     </section>
 
-    <!-- Core Value Propositions / Features -->
-    <section class="features-section">
-        <div class="section-container">
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+    <section class="trust-badges">
+        <div class="badge-container">
+            <div class="badge-card">
+                <i class="fa-solid fa-shield-halved"></i>
                 <h3>Escrow Protection</h3>
-                <p>Funds are securely held in escrow and only released when both parties fulfill their end of the trade.</p>
+                <p>Funds are held securely and only released when both buyer and seller are satisfied.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-id-card-clip"></i></div>
-                <h3>Verified Profiles</h3>
-                <p>We eliminate scammers by verifying user identities, building a trusted ecosystem for South African traders.</p>
+            <div class="badge-card">
+                <i class="fa-solid fa-user-check"></i>
+                <h3>Verified Traders</h3>
+                <p>Deal with authenticated users to completely eliminate scams and fake profiles.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
-                <h3>Instant Trade Settlement</h3>
-                <p>Experience seamless, low-latency transaction processing tailored perfectly for local mobile networks.</p>
+            <div class="badge-card">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Digital Inclusion</h3>
+                <p>Tailored tools designed to help informal businesses grow safely in the digital economy.</p>
             </div>
         </div>
     </section>
 
-    <!-- Shopify-style Product/Marketplace Preview Grid -->
-    <section class="marketplace-preview">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Featured Marketplace Categories</h2>
-                <a href="#" class="view-all-link">View all categories →</a>
+    <section class="featured-categories">
+        <div class="section-header">
+            <h2>Shop by Category</h2>
+            <a href="#" class="view-all">View all <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="category-grid">
+            <div class="category-item">
+                <div class="category-image-placeholder">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Wholesale Stock</h3>
+                    <p>Bulk goods and inventory</p>
+                </div>
             </div>
-
-            <div class="grid-layout">
-                <!-- Category Item 1 -->
-                <div class="product-card">
-                    <div class="product-image-placeholder">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Electronics & Gadgets</h3>
-                        <p class="product-meta">Verify trade protection active</p>
-                    </div>
+            <div class="category-item">
+                <div class="category-image-placeholder">
+                    <i class="fa-solid fa-shirt"></i>
                 </div>
-
-                <!-- Category Item 2 -->
-                <div class="product-card">
-                    <div class="product-image-placeholder">
-                        <i class="fa-solid fa-shirt"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Clothing & Apparel</h3>
-                        <p class="product-meta">Verify trade protection active</p>
-                    </div>
+                <div class="category-info">
+                    <h3>Apparel & Textiles</h3>
+                    <p>Clothing, fabrics, and footwear</p>
                 </div>
-
-                <!-- Category Item 3 -->
-                <div class="product-card">
-                    <div class="product-image-placeholder">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Home & Living</h3>
-                        <p class="product-meta">Verify trade protection active</p>
-                    </div>
+            </div>
+            <div class="category-item">
+                <div class="category-image-placeholder">
+                    <i class="fa-solid fa-blender"></i>
                 </div>
-
-                <!-- Category Item 4 -->
-                <div class="product-card">
-                    <div class="product-image-placeholder">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <div class="product-info">
-                        <h3>Services & Tools</h3>
-                        <p class="product-meta">Verify trade protection active</p>
-                    </div>
+                <div class="category-info">
+                    <h3>Electronics & Appliances</h3>
+                    <p>Phones, hardware, and gadgets</p>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-image-placeholder">
+                    <i class="fa-solid fa-apple-whole"></i>
+                </div>
+                <div class="category-info">
+                    <h3>Fresh Produce</h3>
+                    <p>Farm-to-market supplies</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
+    <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-brand">
-                <p><strong>SafeTrade SA</strong></p>
-                <p>Building trust in South Africa's informal economy, one secure transaction at a time.</p>
+            <div class="footer-col branding">
+                <img src="assets/img/logo.png" alt="SafeTradeSA Logo">
+                <p>Securing informal trade across South Africa through digital trust and ironclad escrow solutions.</p>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
+            <div class="footer-col">
+                <h4>Platform</h4>
                 <ul>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Escrow Policy</a></li>
+                    <li><a href="#">Fees & Pricing</a></li>
+                    <li><a href="#">Safety Center</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
                     <li><a href="#">Terms of Service</a></li>
                     <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Escrow Agreement</a></li>
+                    <li><a href="#">Dispute Resolution</a></li>
                 </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Stay updated on new safety features and market tips.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SafeTrade SA. All Rights Reserved.</p>
+            <p>&copy; 2026 SafeTradeSA. All rights reserved. Supporting South African Economic Growth.</p>
         </div>
     </footer>
+
+    <!-- 3D Interactive Script -->
+    <script>
+        // Mouse tracking for 3D effects
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.badge-card, .category-item');
+            
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+                
+                // Only apply effect on hover
+                if (card.matches(':hover')) {
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(50px)`;
+                }
+            });
+        });
+
+        // Scroll animation trigger
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.badge-card, .category-item').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Parallax effect on hero section
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('.hero-section');
+            if (hero) {
+                const scrollY = window.scrollY;
+                const heroContent = hero.querySelector('.hero-content');
+                heroContent.style.transform = `translateZ(${scrollY * 0.5}px) translateY(${scrollY * 0.3}px)`;
+            }
+        });
+
+        // Button ripple effect
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px;
+                    height: ${size}px;
+                    background: rgba(255, 255, 255, 0.5);
+                    border-radius: 50%;
+                    left: ${x}px;
+                    top: ${y}px;
+                    pointer-events: none;
+                    animation: ripple 0.6s ease-out;
+                `;
+                
+                this.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    transform: scale(4);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        // Light up effect on scroll
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const cards = document.querySelectorAll('.badge-card, .category-item');
+            
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    const opacity = Math.min(1, (window.innerHeight - rect.top) / window.innerHeight);
+                    card.style.opacity = Math.max(0.3, opacity);
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
