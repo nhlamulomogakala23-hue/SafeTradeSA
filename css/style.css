@@ -58,6 +58,7 @@ a {
 /* Restricts the size of your logo cleanly in the header */
 .logo img {
     height: 45px;
+    width: auto;
     object-fit: contain;
     display: block;
 }
