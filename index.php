@@ -21,7 +21,7 @@
         <div class="header-container">
             <!-- Logo Area referencing your brand image -->
             <div class="logo">
-                <img src="image.png" alt="SafeTrade SA Logo">
+                <img src="assets/images/logo.jpeg" alt="SafeTrade SA Logo">
             </div>
             
             <!-- Navigation Links -->
