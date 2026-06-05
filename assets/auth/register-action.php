@@ -1,9 +1,17 @@
 <?php
+// Debugging: show errors
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Step 1: Include Database
-include '../config/db.php'; 
+// Force the path to be absolute or double-check the path
+// If your folder is C:\xampp\htdocs\SafeTradeSA, then this path should work:
+include __DIR__ . '/../config/db.php';
+
+// Check if connection was successful
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+// ... rest of your code
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Step 2: Check if fields are empty

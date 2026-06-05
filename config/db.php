@@ -6,7 +6,7 @@
 
 // 1. Database Credentials
 $host     = 'localhost';       // Usually 'localhost' if running on XAMPP/MAMP/WAMP
-$dbname   = 'safetrade_db';    // The name of your database (change this if different)
+$dbname   = 'safetradesa_db';    // The name of your database (change this if different)
 $username = 'root';            // Default local username
 $password = '';                // Default local password (leave empty for XAMPP, use 'root' for MAMP)
 
