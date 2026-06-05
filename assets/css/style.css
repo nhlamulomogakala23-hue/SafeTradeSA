@@ -1,375 +1,217 @@
-/* --- Global Styles & Brand Colors --- */
-:root {
-    --primary-color: #2ecc71;      /* Mint/Emerald Green from logo */
-    --dark-color: #111111;         /* Hexagon Hex black color */
-    --light-bg: #f8f9f8;           /* Cream/light grey background */
-    --text-color: #2c3e50;
-    --border-color: #e5e5e5;
-    --white: #ffffff;
-}
+/* --- Shopify-Style Design Tokens --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: var(--white);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    font-family: 'Inter', sans-serif;
+    color: #121212;
+    background-color: #ffffff;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* --- Announcement Bar --- */
 .announcement-bar {
-    background-color: var(--dark-color);
-    color: var(--white);
+    background-color: #121212;
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 9px 20px;
     font-size: 0.85rem;
     font-weight: 500;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+}
+.announcement-bar i {
+    margin-right: 5px;
+    font-size: 0.75rem;
+    color: #008060; /* Shopify Green Accent */
 }
 
-/* --- Shopify-Style Header Navigation --- */
+/* --- Header Layout --- */
 .main-header {
-    border-bottom: 1px solid var(--border-color);
+    background-color: #ffffff;
+    border-bottom: 1px solid #f1f1f1;
     position: sticky;
     top: 0;
-    background-color: var(--white);
     z-index: 1000;
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
 }
 
-/* Restricts the size of your logo cleanly in the header */
-.logo img {
-    height: 45px;
-    width: auto;
-    object-fit: contain;
-    display: block;
+/* --- Typography-Based Logo Block --- */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
 }
 
-.nav-menu ul {
+.logo-accent {
+    color: #008060;
+    margin-left: 2px;
+}
+
+.logo-subtext {
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #6a6a6a;
+    margin-top: 4px;
+}
+
+/* --- Navigation Links --- */
+.nav-links ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 32px;
 }
 
-.nav-menu ul li a {
+.nav-links a {
     font-size: 0.95rem;
     font-weight: 500;
-    color: #555;
-    transition: color 0.2s ease;
+    color: #6a6a6a;
+    text-decoration: none;
+    transition: color 0.15s ease;
 }
 
-.nav-menu ul li a:hover,
-.nav-menu ul li a.active {
-    color: var(--primary-color);
+.nav-links a:hover, 
+.nav-links a.active {
+    color: #121212;
 }
 
-.header-icons {
+/* --- Action Area --- */
+.header-actions {
     display: flex;
     align-items: center;
-    gap: 20px;
-    font-size: 1.2rem;
+    gap: 24px;
 }
 
-.header-icons a:hover {
-    color: var(--primary-color);
+.icon-link {
+    font-size: 1.15rem;
+    color: #121212;
+    text-decoration: none;
 }
 
-.cart-icon {
-    position: relative;
+.cta-nav-btn {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
 
-.cart-icon .badge {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: var(--dark-color);
-    color: var(--white);
-    font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: 50%;
+.cta-nav-btn:hover {
+    background-color: #333333;
 }
 
 /* --- Premium Hero Section --- */
 .hero-section {
-    background-color: var(--light-bg);
-    padding: 100px 20px;
+    background-color: #f6f6f6; /* Classic clean gray e-commerce backdrop */
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .hero-content {
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 720px;
 }
 
-.hero-tagline {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--primary-color);
-    font-weight: 700;
+.trust-pill {
     display: inline-block;
-    margin-bottom: 15px;
+    background-color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #008060;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .hero-content h1 {
-    font-size: 2.8rem;
-    color: var(--dark-color);
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-size: 3.2rem;
     font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: #121212;
+    margin-bottom: 20px;
 }
 
 .hero-content p {
     font-size: 1.15rem;
-    color: #666;
-    margin-bottom: 35px;
+    color: #555555;
+    margin-bottom: 36px;
+    line-height: 1.6;
 }
 
 .hero-buttons {
     display: flex;
+    gap: 16px;
     justify-content: center;
-    gap: 15px;
-}
-
-.btn {
-    padding: 12px 30px;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 4px;
-    transition: all 0.2s ease;
 }
 
 .btn-primary {
-    background-color: var(--dark-color);
-    color: var(--white);
+    background-color: #008060;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-color);
+    background-color: #005e46;
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--dark-color);
-    border: 1px solid var(--dark-color);
+    color: #121212;
+    padding: 14px 28px;
+    border: 1px solid #121212;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
 
 .btn-secondary:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
-/* --- Features Section --- */
-.features-section {
-    padding: 60px 20px;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.section-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.features-section .section-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.feature-card {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-}
-
-.feature-icon {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.feature-card h3 {
-    margin-bottom: 10px;
-    color: var(--dark-color);
-}
-
-.feature-card p {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-/* --- Shopify Grid Layout --- */
-.marketplace-preview {
-    padding: 80px 20px;
-    background-color: var(--white);
-}
-
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 30px;
-}
-
-.section-header h2 {
-    font-size: 1.8rem;
-    color: var(--dark-color);
-}
-
-.view-all-link {
-    color: var(--dark-color);
-    font-weight: 500;
-    border-bottom: 1px solid var(--dark-color);
-    padding-bottom: 2px;
-}
-
-.view-all-link:hover {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.product-card {
-    background: var(--white);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-
-.product-image-placeholder {
-    background-color: var(--light-bg);
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: #ccc;
-    transition: color 0.2s ease;
-}
-
-.product-card:hover .product-image-placeholder {
-    color: var(--primary-color);
-}
-
-.product-info {
-    padding: 20px;
-}
-
-.product-info h3 {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    color: var(--dark-color);
-}
-
-.product-meta {
-    font-size: 0.85rem;
-    color: var(--primary-color);
-    font-weight: 500;
-}
-
-/* --- Footer --- */
-.site-footer {
-    background-color: var(--light-bg);
-    padding: 60px 20px 20px;
-    border-top: 1px solid var(--border-color);
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-.footer-brand {
-    max-width: 400px;
-}
-
-.footer-brand p {
-    margin-top: 10px;
-    color: #666;
-}
-
-.footer-links h4 {
-    margin-bottom: 15px;
-    color: var(--dark-color);
-}
-
-.footer-links ul {
-    list-style: none;
-}
-
-.footer-links ul li {
-    margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-.footer-links ul li a:hover {
-    color: var(--primary-color);
-}
-
-.footer-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-    text-align: center;
-    font-size: 0.85rem;
-    color: #888;
-}
-
-/* --- Responsive Adjustments --- */
+/* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .nav-menu ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .features-section .section-container {
-        flex-direction: column;
-        gap: 20px;
+    .nav-links {
+        display: none; /* Collapses text menu on mobile devices */
     }
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
     }
 }
