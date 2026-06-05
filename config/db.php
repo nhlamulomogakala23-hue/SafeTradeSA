@@ -10,6 +10,12 @@ $dbname   = 'safetrade_db';    // The name of your database (change this if diff
 $username = 'root';            // Default local username
 $password = '';                // Default local password (leave empty for XAMPP, use 'root' for MAMP)
 
+$conn = mysqli_connect($host, $username, $password, $dbname);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
 // 2. Create the Connection
 try {
     // We use PDO (PHP Data Objects) because it is the most secure way to prevent hackers (SQL Injection)
