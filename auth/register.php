@@ -23,20 +23,20 @@
             <div class="card-body p-4 p-md-5">
                 <h3 class="text-center mb-4 fw-bold" style="color: #121212;">Create an Account</h3>
                 
-                <form action="register.php" method="POST">
+                <form action="register-action.php" method="POST">
                     <div class="mb-3">
                         <label class="form-label text-secondary fw-medium">Full Name</label>
-                        <input type="text" name="name" class="form-control py-2" required>
+                        <input type="text" name="name" class="form-control" required>
                     </div>
                     
                     <div class="mb-3">
                         <label class="form-label text-secondary fw-medium">Email Address</label>
-                        <input type="email" name="email" class="form-control py-2" required>
+                        <input type="email" name="email" class="form-control" required>
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label text-secondary fw-medium">Password</label>
-                        <input type="password" name="password" class="form-control py-2" required>
+                        <input type="password" name="password" class="form-control" required>
                     </div>
 
                     <button type="submit" class="btn w-100 py-2 fw-medium text-white mt-3" style="background-color: #008060; border-radius: 4px;">Sign Up</button>
