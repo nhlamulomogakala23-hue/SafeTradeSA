@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <!-- YOUR CUSTOM CSS FILE CONNECTION -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body style="background-color: #f4f6f8;">
 
     <!-- Minimal Header -->
     <header class="bg-white border-bottom py-3 sticky-top">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html">
-                <img src="assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 40px; object-fit: contain;">
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 40px; object-fit: contain;">
             </a>
             <a href="index.html" class="text-secondary text-decoration-none fw-medium">Back to Home</a>
         </div>
