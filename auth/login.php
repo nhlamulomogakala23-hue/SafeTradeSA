@@ -1,3 +1,7 @@
+<?php
+require_once 'config/database.php';
+// Now the page is securely connected to the database!
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
