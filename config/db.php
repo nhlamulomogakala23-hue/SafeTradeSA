@@ -10,7 +10,7 @@ $dbname   = 'safetradesa_db';    // The name of your database (change this if di
 $username = 'root';            // Default local username
 $password = '';                // Default local password (leave empty for XAMPP, use 'root' for MAMP)
 
-$conn = mysqli_connect($host, $username, $password, $dbname);
+$conn = mysqli_connect("localhost", "root", "", "safetradesa_db");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -19,7 +19,7 @@ if (!$conn) {
 // 2. Create the Connection
 try {
     // We use PDO (PHP Data Objects) because it is the most secure way to prevent hackers (SQL Injection)
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo = new PDO("mysql:host=localhost;dbname=safetradesa_db;charset=utf8mb4", "root", "");
     
     // 3. Set Error Modes
     // This tells the database to show us exact error messages if something goes wrong

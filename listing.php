@@ -13,8 +13,14 @@
     <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
         <h2 class="fw-bold mb-0">SafeTrade SA</h2>
         <div>
-            <a href="SafeTradeSA/listing.php" class="text-dark text-decoration-none fw-bold me-3">Browse</a>
-            <a href="dashboard.php" class="btn btn-outline-dark btn-sm">Dashboard</a>
+        <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+        <a class="nav-link px-3" href="index.php">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link px-3" href="seller/dashboard.php">Dashboard</a>
+    </li>
+    </ul>
         </div>
     </div>
 

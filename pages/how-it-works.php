@@ -4,73 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How It Works | SafeTrade SA</title>
-    
-    <!-- External Frameworks -->
+    <!-- Bootstrap and Google Fonts matching your video layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- YOUR CUSTOM CSS FILE CONNECTION -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .navbar-brand-custom {
+            font-weight: 700;
+            color: #fff !important;
+        }
+        .nav-link-custom {
+            color: rgba(255,255,255,0.8) !important;
+            font-weight: 500;
+            margin-right: 15px;
+        }
+        .nav-link-custom:hover {
+            color: #fff !important;
+        }
+        .step-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #212529;
+            opacity: 0.15;
+            line-height: 1;
+        }
+    </style>
 </head>
-<body style="background-color: #f4f6f8;">
+<body class="bg-light">
 
-    <!-- Minimal Header -->
-    <header class="bg-white border-bottom py-3 sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="../index.html">
-                <img src="../assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 40px; object-fit: contain;">
-            </a>
-            <a href="index.html" class="text-secondary text-decoration-none fw-medium">Back to Home</a>
+<!-- 1. HEADER NAVIGATION - Exact same dark theme layout as index.php -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand navbar-brand-custom fs-4" href="index.php">SafeTrade SA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="../listing.php">Browse Trades</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom fw-bold text-white" href="how-it-works.php">How It Works</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="help.php">Help & Support</a></li>
+            </ul>
         </div>
-    </header>
+    </div>
+</nav>
 
-    <!-- Page Content -->
-    <main class="container py-5" style="max-width: 800px;">
-        <div class="text-center mb-5">
-            <h1 class="fw-bold" style="color: #121212;">How SafeTrade Works</h1>
-            <p class="text-secondary fs-5">Four simple steps to secure your money and your items.</p>
-        </div>
+<!-- 2. PAGE HEADER -->
+<div class="bg-dark text-white text-center py-5 border-top border-secondary">
+    <div class="container py-3">
+        <h1 class="display-5 fw-bold">Guarding South African Informal Trades</h1>
+        <p class="lead text-muted mx-auto" style="max-width: 600px;">Discover how our verified community and secure escrow systems take the risk out of peer-to-peer trading.</p>
+    </div>
+</div>
 
-        <div class="card border-0 shadow-sm mb-4" style="border-radius: 8px;">
-            <div class="card-body p-4 d-flex gap-4 align-items-center">
-                <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center fw-bold fs-4" style="min-width: 50px; height: 50px;">1</div>
-                <div>
-                    <h5 class="fw-bold mb-1">Agree on Terms</h5>
-                    <p class="text-secondary mb-0">Buyer and seller agree on the item price and shipping method.</p>
-                </div>
+<!-- 3. HOW IT WORKS STEPS -->
+<div class="container my-5 py-4">
+    <div class="row g-4 justify-content-center">
+        
+        <!-- Step 1: Verification -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4 bg-white position-relative">
+                <div class="position-absolute top-0 end-0 pe-4 pt-3 step-number">01</div>
+                <h4 class="fw-bold text-dark mt-2 mb-3">Verify Your Profile</h4>
+                <p class="text-muted small">To reduce fraud and protect our community, every trader completes a secure South African ID and phone validation check before listing items.</p>
+                <span class="badge bg-secondary align-self-start px-2 py-1 mt-auto" style="font-size: 0.75rem;">100% Verified Only</span>
             </div>
         </div>
 
-        <div class="card border-0 shadow-sm mb-4" style="border-radius: 8px;">
-            <div class="card-body p-4 d-flex gap-4 align-items-center">
-                <div class="text-white rounded-circle d-flex align-items-center justify-content-center fw-bold fs-4" style="min-width: 50px; height: 50px; background-color: #008060;">2</div>
-                <div>
-                    <h5 class="fw-bold mb-1">Buyer Secures Funds</h5>
-                    <p class="text-secondary mb-0">The buyer pays the funds into our secure Escrow vault. The seller is notified that the money is safe.</p>
-                </div>
+        <!-- Step 2: Escrow Listing -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4 bg-white position-relative">
+                <div class="position-absolute top-0 end-0 pe-4 pt-3 step-number">02</div>
+                <h4 class="fw-bold text-dark mt-2 mb-3">Secure with Escrow</h4>
+                <p class="text-muted small">When a buyer wants an item, their payment is safely held in our secure escrow protection vault. Money is never handed directly to strangers upfront.</p>
+                <span class="badge bg-success align-self-start px-2 py-1 mt-auto" style="font-size: 0.75rem;">Escrow Protected</span>
             </div>
         </div>
 
-        <div class="card border-0 shadow-sm mb-4" style="border-radius: 8px;">
-            <div class="card-body p-4 d-flex gap-4 align-items-center">
-                <div class="bg-dark text-white rounded-circle d-flex align-items-center justify-content-center fw-bold fs-4" style="min-width: 50px; height: 50px;">3</div>
-                <div>
-                    <h5 class="fw-bold mb-1">Seller Delivers Item</h5>
-                    <p class="text-secondary mb-0">The seller ships the item or meets up to hand it over, knowing the money is guaranteed.</p>
-                </div>
+        <!-- Step 3: Safe Collection -->
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm p-4 bg-white position-relative">
+                <div class="position-absolute top-0 end-0 pe-4 pt-3 step-number">03</div>
+                <h4 class="fw-bold text-dark mt-2 mb-3">Inspect & Release</h4>
+                <p class="text-muted small">Meet up safely or arrange delivery to verify the item. Once the buyer is completely satisfied with the product, the funds are instantly released to the seller.</p>
+                <span class="badge bg-primary align-self-start px-2 py-1 mt-auto" style="font-size: 0.75rem;">Fair & Honest Trade</span>
             </div>
         </div>
 
-        <div class="card border-0 shadow-sm mb-4" style="border-radius: 8px;">
-            <div class="card-body p-4 d-flex gap-4 align-items-center">
-                <div class="text-white rounded-circle d-flex align-items-center justify-content-center fw-bold fs-4" style="min-width: 50px; height: 50px; background-color: #008060;">4</div>
-                <div>
-                    <h5 class="fw-bold mb-1">Funds are Released</h5>
-                    <p class="text-secondary mb-0">Once the buyer inspects and accepts the item, funds are instantly released to the seller's account.</p>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
 
+    <!-- Call to Action Section -->
+    <div class="text-center mt-5 pt-4">
+        <a href="login.php" class="btn btn-dark btn-lg fw-bold px-5 py-3 shadow-sm">Start Safe Trading Now</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

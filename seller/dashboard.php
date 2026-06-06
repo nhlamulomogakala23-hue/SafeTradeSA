@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // 2. Connect to your database
-include 'config/db.php'; 
+include '../config/db.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@ include 'config/db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trader Dashboard | SafeTrade SA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="bg-light">
 
@@ -22,7 +22,7 @@ include 'config/db.php';
     <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
         <h2 class="fw-bold mb-0">SafeTrade SA</h2>
         <div>
-            <a href="listing.php" class="btn btn-outline-dark btn-sm me-2">Browse Items</a>
+            <a href="../listing.php" class="btn btn-outline-dark btn-sm me-2">Browse Items</a>
             <a href="dashboard.php" class="text-dark text-decoration-none fw-bold">Dashboard</a>
         </div>
     </div>
