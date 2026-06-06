@@ -15,8 +15,9 @@
         <h1 class="fw-bold mb-3">SafeTrade SA</h1>
         <p class="lead mb-4">Secure C2C Trading for the Informal Economy</p>
         
-        <div class="spinner-border text-light" role="status">
-            <span class="visually-hidden">Loading...</span>
+         <div class="mt-4">
+    <a href="auth/login.php" class="btn btn-primary btn-lg mx-2">Log In</a>
+    <a href="listing.php" class="btn btn-outline-light btn-lg mx-2">Browse Items</a>
         </div>
     </div>
 

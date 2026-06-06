@@ -1,6 +1,7 @@
 <?php
-require_once 'config/database.php';
-// Now the page is securely connected to the database!
+// The '../' tells the computer to go out of the 'auth' folder, 
+// then into the 'config' folder, then look for 'db.php'
+require_once '../config/db.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +28,7 @@ require_once 'config/database.php';
             <div class="card-body p-4 p-md-5">
                 <h3 class="text-center mb-4 fw-bold" style="color: #121212;">Welcome Back</h3>
                 
-                <form action="login.php" method="POST">
+                <form action="login-action.php" method="POST">
                     <div class="mb-3">
                         <label class="form-label text-secondary fw-medium">Email Address</label>
                         <input type="email" name="email" class="form-control py-2" required>
