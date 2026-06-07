@@ -23,7 +23,7 @@ error_reporting(E_ALL);
                 <div class="card p-4 border-0 shadow-sm">
                     <h4>Active Trades</h4>
                     <p>You have 0 active escrow trades.</p>
-                    <a href="../pages/sell-item.php" class="btn btn-primary">Create New Listing</a>
+                    <a href="../pages/sell_item.php" class="btn btn-primary">Create New Listing</a>
                 </div>
             </div>
         </div>

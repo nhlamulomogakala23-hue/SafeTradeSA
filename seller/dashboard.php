@@ -22,7 +22,7 @@ include '../config/db.php';
     <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
         <h2 class="fw-bold mb-0">SafeTrade SA</h2>
         <div>
-            <a href="../listing.php" class="btn btn-outline-dark btn-sm me-2">Browse Items</a>
+            <a href="listing.php" class="btn btn-outline-dark">Browse Items</a>
             <a href="dashboard.php" class="text-dark text-decoration-none fw-bold">Dashboard</a>
         </div>
     </div>

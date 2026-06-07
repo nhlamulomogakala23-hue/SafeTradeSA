@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['user_name'] = $user['name'];
-            header("Location: ../sell-item.php"); // Go to your store
+            header("Location: ../sell_item.php"); // Go to your store
             exit();
         } else {
             die("Incorrect password. <a href='login.php'>Go back</a>");

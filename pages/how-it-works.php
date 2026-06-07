@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,15 +33,10 @@
 <body class="bg-light">
 
 <!-- 1. HEADER NAVIGATION - Exact same dark theme layout as index.php -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-    <div class="container">
-        <a class="navbar-brand navbar-brand-custom fs-4" href="index.php">SafeTrade SA</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<?php include '../includes/header.php'; ?>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link nav-link-custom" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-custom" href="../index.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link nav-link-custom" href="../listing.php">Browse Trades</a></li>
                 <li class="nav-item"><a class="nav-link nav-link-custom fw-bold text-white" href="how-it-works.php">How It Works</a></li>
                 <li class="nav-item"><a class="nav-link nav-link-custom" href="help.php">Help & Support</a></li>
@@ -100,5 +96,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<?php include '<div class="">includes/footer.php'; ?>
 </body>
 </html>
