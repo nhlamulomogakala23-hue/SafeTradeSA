@@ -47,6 +47,7 @@
 
 <!-- 2. PAGE HEADER -->
 <div class="bg-dark text-white text-center py-5 border-top border-secondary">
+    <?php include '../includes/header.php'; ?>
     <div class="container py-3">
         <h1 class="display-5 fw-bold">Guarding South African Informal Trades</h1>
         <p class="lead text-muted mx-auto" style="max-width: 600px;">Discover how our verified community and secure escrow systems take the risk out of peer-to-peer trading.</p>
@@ -95,7 +96,10 @@
     </div>
 </div>
 
+<!-- 4. FOOTER -->
+<?php include '../includes/footer.php'; ?>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<?php include '<div class="">includes/footer.php'; ?>
+
 </body>
 </html>
