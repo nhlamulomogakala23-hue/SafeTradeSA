@@ -19,8 +19,8 @@ require_once '../config/db.php';
 
     <div class="container" style="max-width: 450px;">
         <div class="text-center mb-4">
-            <a href="../index.php">
-                <img src="assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 50px; object-fit: contain;">
+            <a href="/SafeTradeSA/index.php">
+                <img src="/SafeTradeSA/assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 50px; object-fit: contain;">
             </a>
         </div>
 
@@ -28,7 +28,7 @@ require_once '../config/db.php';
             <div class="card-body p-4 p-md-5">
                 <h3 class="text-center mb-4 fw-bold" style="color: #121212;">Welcome Back</h3>
                 
-                <form action="login-action.php" method="POST">
+                <form action="/SafeTradeSA/seller/login-action.php" method="POST">
                     <div class="mb-3">
                         <label class="form-label text-secondary fw-medium">Email Address</label>
                         <input type="email" name="email" class="form-control py-2" required>
@@ -46,7 +46,7 @@ require_once '../config/db.php';
                 </form>
 
                 <div class="text-center mt-4">
-                    <p class="text-secondary mb-0">New to SafeTrade? <a href="register.php" style="color: #008060; text-decoration: none; font-weight: 500;">Create an account</a></p>
+                    <p class="text-secondary mb-0">New to SafeTrade? <a href="/SafeTradeSA/seller/register.php" style="color: #008060; text-decoration: none; font-weight: 500;">Create an account</a></p>
                 </div>
             </div>
         </div>

@@ -15,21 +15,6 @@ require_once 'config/db.php';
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-    <div class="container">
-        <a class="navbar-brand fw-bold fs-4" href="index.php">SafeTrade SA</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link px-3" href="listing.php">Browse Trades</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="pages/help.php">Help & Support</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
 <div class="text-center bg-dark text-light py-5">
     <div class="container py-5">
         <div class="mb-3">
@@ -39,9 +24,8 @@ require_once 'config/db.php';
         <p class="lead text-secondary mx-auto mb-4" style="max-width: 650px;">
             Empowering informal traders and everyday buyers with foolproof escrow protection and fully verified user profiles.
         </p>
-        <div class="pt-2 d-flex flex-column flex-sm-row justify-content-center gap-3">
+        <div class="pt-2 d-flex justify-content-center">
             <a href="listing.php" class="btn btn-emerald btn-lg px-4 fw-medium" style="background-color: #008060; color: white;">Explore Marketplace</a>
-            <a href="pages/how-it-works.php" class="btn btn-outline-light btn-lg px-4 fw-medium">How It Works</a>
         </div>
     </div>
 </div>

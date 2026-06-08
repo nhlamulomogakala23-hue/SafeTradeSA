@@ -13,13 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['user_name'] = $user['name'];
-            header("Location: ../seller/sell_item.php"); // Go to your store
+            header("Location: /SafeTradeSA/seller/sell_item.php"); // Go to your store
             exit();
         } else {
-            die("Incorrect password. <a href='login.php'>Go back</a>");
+            die("Incorrect password. <a href='/SafeTradeSA/pages/login.php'>Go back</a>");
         }
     } else {
-        die("Email not found. <a href='register.php'>Register here</a>");
+        die("Email not found. <a href='/SafeTradeSA/pages/register.php'>Register here</a>");
     }
 }
 ?>

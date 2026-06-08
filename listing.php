@@ -43,11 +43,18 @@ include 'config/db.php';
                                 <p class="text-primary fw-bold">R<?php echo number_format($product['price'], 2); ?></p>
                                 <p class="card-text small text-muted"><?php echo substr($product['description'], 0, 100); ?>...</p>
                                 
-                                <div class="d-grid gap-2 mt-3">
-                                    <a href="#" class="btn btn-outline-primary">View Details</a>
-                                    <a href="#" class="btn btn-primary">Buy with Escrow</a>
-                                    <a href="#" class="btn btn-success"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
-                                </div>
+                               <div class="d-grid gap-2 mt-3">
+                                    <!-- View Details: links to a dedicated product page -->
+                                <a href="/SafeTradeSA/product.php?id=<?php echo $product['id']; ?>" class="btn btn-outline-primary">View Details</a>
+    
+                                <!-- Buy with Escrow: links to your checkout or escrow process -->
+                                <a href="/SafeTradeSA/checkout.php?id=<?php echo $product['id']; ?>" class="btn btn-primary">Buy with Escrow</a>
+    
+                            <!-- Chat WhatsApp: opens WhatsApp with a pre-filled message -->
+                            <a href="https://wa.me/YOUR_PHONE_NUMBER?text=I%20am%20interested%20in%20<?php echo urlencode($product['name']); ?>" target="_blank" class="btn btn-success">
+                             <i class="bi bi-whatsapp"></i> Chat WhatsApp
+    </a>
+</div>
                             </div>
                         </div>
                     </div>

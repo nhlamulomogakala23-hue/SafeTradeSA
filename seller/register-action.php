@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "Registration successful! <a href='login.php'>Login here</a>";
+        echo "Registration successful! <a href='/SafeTradeSA/seller/login.php'>Login here</a>";
     } else {
         // This will print the specific MySQL error if the insert fails
         echo "Database Error: " . mysqli_error($conn);

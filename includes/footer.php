@@ -4,11 +4,11 @@
         <h5 class="fw-bold text-success mb-3">SAFETRADE SA</h5>
         
         <div class="mb-4">
-            <a href="index.php" class="text-light text-decoration-none mx-2 mx-md-3 small">Home</a>
-            <a href="how-it-works.php" class="text-light text-decoration-none mx-2 mx-md-3 small">How It Works</a>
-            <a href="listing.php" class="text-light text-decoration-none mx-2 mx-md-3 small">Browse Trades</a>
-            <a href="about.php" class="text-light text-decoration-none mx-2 mx-md-3 small">About Escrow</a>
-            <a href="help.php" class="text-light text-decoration-none mx-2 mx-md-3 small">Help & Support</a>
+            <a href="../index.php" class="text-light text-decoration-none mx-2 mx-md-3 small">Home</a>
+            <a href="../pages/how-it-works.php" class="text-light text-decoration-none mx-2 mx-md-3 small">How It Works</a>
+            <a href="../listing.php" class="text-light text-decoration-none mx-2 mx-md-3 small">Browse Trades</a>
+            <a href="../pages/about.php" class="text-light text-decoration-none mx-2 mx-md-3 small">About Escrow</a>
+            <a href="../pages/help.php" class="text-light text-decoration-none mx-2 mx-md-3 small">Help & Support</a>
         </div>
         
         <p class="text-light small mb-0" style="opacity: 0.8;">
