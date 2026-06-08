@@ -6,7 +6,7 @@
             <a href="/SafeTradeSA/pages/about.php" class="text-dark text-decoration-none mx-2">About Escrow</a>
             <a href="/SafeTradeSA/seller/dashboard.php" class="btn btn-outline-dark btn-sm ms-3">Trader Dashboard</a>
             <a href="/SafeTradeSA/seller/login.php" class="btn btn-outline-primary btn-sm ms-3">Login</a>
-
+            <a href="/SafeTradeSA/pages/profile.php" class="btn btn-outline-secondary btn-sm ms-2">Profile</a>
         </nav>
         <div class="d-flex">
             <a href="/SafeTradeSA/seller/login.php" class="btn btn-outline-primary">

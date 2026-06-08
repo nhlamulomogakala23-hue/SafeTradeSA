@@ -15,7 +15,7 @@
     <div class="container" style="max-width: 450px;">
         <div class="text-center mb-4">
             <a href="../index.php">
-                <img src="assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 50px; object-fit: contain;">
+                <img src="/SafeTradeSA/assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 50px; object-fit: contain;">
             </a>
         </div>
 

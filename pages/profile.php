@@ -16,11 +16,11 @@
     <!-- Dashboard Navbar -->
     <header class="bg-white border-bottom py-3 sticky-top">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img src="../assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 40px; object-fit: contain;">
             </a>
             <div class="d-flex align-items-center gap-3">
-                <a href="../index.html" class="text-secondary text-decoration-none fw-medium d-none d-sm-block">Marketplace</a>
+                <a href="../index.php" class="text-secondary text-decoration-none fw-medium d-none d-sm-block">Marketplace</a>
                 <a href="../logout.php" class="btn btn-outline-dark btn-sm fw-medium" style="border-radius: 4px;">Logout</a>
             </div>
         </div>
