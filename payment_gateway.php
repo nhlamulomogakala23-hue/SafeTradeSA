@@ -13,7 +13,7 @@ $product_id = isset($_GET['product_id']) ? intval($_GET['product_id']) : 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Checkout Gateway | SafeTrade SA</title>
     <!-- Links to your updated style.css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body style="background-color: #f6f6f6;">
 
