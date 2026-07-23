@@ -53,7 +53,7 @@ if ($result && mysqli_num_rows($result) > 0) {
             <a href="index.php" class="fw-bold text-dark text-decoration-none h4 mb-0">SafeTrade SA</a>
             <nav>
                 <a href="listing.php" class="text-dark text-decoration-none mx-2">Browse</a>
-                <a href="seller/dashboard.php" class="btn btn-outline-dark btn-sm ms-2">Dashboard</a>
+                <a href="//seller/dashboard.php" class="btn btn-outline-dark btn-sm ms-2">Dashboard</a>
             </nav>
         </div>
     </header>
@@ -65,57 +65,38 @@ if ($result && mysqli_num_rows($result) > 0) {
             <div class="col-md-7 col-lg-8">
                 <div class="bg-white p-4 rounded shadow-sm border-0 mb-4">
                     <h4 class="mb-3 fw-bold">Delivery & Buyer Details</h4>
-                    <form action="#" method="POST">
+                    
+                    <!-- UPDATED: Form action now redirects to payment_gateway.php and passes the product_id -->
+                    <form action="payment_gateway.php?product_id=<?php echo $product_id; ?>" method="POST">
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <label class="form-label fw-medium">First name</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" name="first_name" class="form-control" required>
                             </div>
                             <div class="col-sm-6">
                                 <label class="form-label fw-medium">Last name</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" name="last_name" class="form-control" required>
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-medium">Phone Number <span class="text-muted">(For verification)</span></label>
-                                <input type="tel" class="form-control" placeholder="082 000 0000" required>
+                                <input type="tel" name="phone_number" class="form-control" placeholder="082 000 0000" required>
                             </div>
                             <div class="col-12">
                                 <label class="form-label fw-medium">Delivery Address or Meeting Point</label>
-                                <input type="text" class="form-control" placeholder="Enter full address or agreed safe trade location" required>
+                                <input type="text" name="delivery_address" class="form-control" placeholder="Enter full address or agreed safe trade location" required>
                             </div>
                         </div>
 
                         <hr class="my-4">
 
-                        <h4 class="mb-3 fw-bold">SafeTrade Escrow Payment</h4>
                         <div class="alert alert-success bg-opacity-10 border-success mb-4">
                             <i class="bi bi-shield-lock-fill me-2 text-success"></i>
-                            <strong>Funds are locked securely!</strong> Your payment is held in our trusted escrow account. The seller will not be paid until you receive and inspect the item.
+                            <strong>Next Step:</strong> You will be securely redirected to choose your payment and tracking options.
                         </div>
 
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label fw-medium">Name on card</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label fw-medium">Credit card number</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label fw-medium">Expiration</label>
-                                <input type="text" class="form-control" placeholder="MM/YY" required>
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label fw-medium">CVV</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <button class="btn btn-primary w-100 btn-lg fw-bold" type="submit" onclick="alert('Escrow payment simulated successfully!'); return false;">
-                            Lock Funds & Place Order
+                        <!-- UPDATED: Removed the 'return false' javascript so the form can actually submit -->
+                        <button class="btn btn-primary w-100 btn-lg fw-bold" type="submit">
+                            Proceed to Payment Options &rarr;
                         </button>
                     </form>
                 </div>
@@ -130,13 +111,14 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <ul class="list-group mb-3 shadow-sm">
                     <li class="list-group-item d-flex justify-content-between lh-sm p-3">
                         <div class="d-flex align-items-center">
-                            <img src="<?php echo htmlspecialchars($product['image_path']); ?>" alt="Item Image" class="rounded me-3" style="width: 50px; height: 50px; object-fit: cover;">
+                            <!-- Make sure your image path handles empty data securely -->
+                            <img src="<?php echo htmlspecialchars($product['image_path'] ?? ''); ?>" alt="Item Image" class="rounded me-3" style="width: 50px; height: 50px; object-fit: cover;">
                             <div>
-                                <h6 class="my-0 fw-bold"><?php echo htmlspecialchars($product['name']); ?></h6>
+                                <h6 class="my-0 fw-bold"><?php echo htmlspecialchars($product['name'] ?? 'Unknown Item'); ?></h6>
                                 <small class="text-muted">Verified Seller</small>
                             </div>
                         </div>
-                        <span class="text-dark fw-bold">R <?php echo htmlspecialchars($product['price']); ?></span>
+                        <span class="text-dark fw-bold">R <?php echo htmlspecialchars($product['price'] ?? '0.00'); ?></span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between bg-light p-3">
                         <div class="text-success">
@@ -147,7 +129,7 @@ if ($result && mysqli_num_rows($result) > 0) {
                     </li>
                     <li class="list-group-item d-flex justify-content-between p-3">
                         <span>Total (ZAR)</span>
-                        <strong class="fs-5">R <?php echo htmlspecialchars($product['price']); ?></strong>
+                        <strong class="fs-5">R <?php echo htmlspecialchars($product['price'] ?? '0.00'); ?></strong>
                     </li>
                 </ul>
             </div>
