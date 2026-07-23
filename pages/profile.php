@@ -21,7 +21,7 @@
             </a>
             <div class="d-flex align-items-center gap-3">
                 <a href="../index.php" class="text-secondary text-decoration-none fw-medium d-none d-sm-block">Marketplace</a>
-                <a href="../logout.php" class="btn btn-outline-dark btn-sm fw-medium" style="border-radius: 4px;">Logout</a>
+                <a href="/SafeTradeSA/seller/logout-action.php" class="btn btn-outline-dark btn-sm fw-medium" style="border-radius: 4px;">Logout</a>
             </div>
         </div>
     </header>
