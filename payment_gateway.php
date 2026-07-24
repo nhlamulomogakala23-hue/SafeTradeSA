@@ -30,6 +30,24 @@ $payment_method = $checkout['payment_method'] ?? 'credit_card';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Custom styling for a larger, bold green-and-white button */
+        .btn-confirm-payment {
+            background-color: #008060;
+            color: #ffffff;
+            font-size: 1.15rem;
+            font-weight: 700;
+            padding: 15px 20px;
+            border-radius: 6px;
+            border: none;
+            width: 100%;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .btn-confirm-payment:hover {
+            background-color: #00664d;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body class="checkout-page">
 
@@ -52,7 +70,7 @@ $payment_method = $checkout['payment_method'] ?? 'credit_card';
             <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
             
             <div class="row g-4">
-                <!-- LEFT COLUMN: Dynamic Payment Form based on selection -->
+                <!-- LEFT COLUMN: Dynamic Payment Form & Confirm Button -->
                 <div class="col-lg-8">
                     
                     <?php if ($payment_method == 'credit_card'): ?>
@@ -104,14 +122,19 @@ $payment_method = $checkout['payment_method'] ?? 'credit_card';
                         <div class="tk-card-body text-center py-5">
                             <i class="bi bi-paypal fs-1 text-primary mb-3"></i>
                             <h5 class="fw-bold">Connect your PayPal account</h5>
-                            <p class="text-muted small">Clicking pay below will process your secure escrow allocation through PayPal.</p>
+                            <p class="text-muted small">Clicking confirm below will process your secure escrow allocation through PayPal.</p>
                         </div>
                     </div>
                     <?php endif; ?>
 
+                    <!-- Larger Green & White Confirm Payment Button -->
+                    <button type="submit" class="btn-confirm-payment mt-3 mb-4 shadow-sm">
+                        <i class="bi bi-lock-fill me-2"></i> Confirm Payment
+                    </button>
+
                 </div>
 
-                <!-- RIGHT COLUMN: Summary & Final Button -->
+                <!-- RIGHT COLUMN: Order Summary Only -->
                 <div class="col-lg-4">
                     <div class="tk-card sticky-top" style="top: 80px;">
                         <div class="tk-card-header">Order Summary</div>
@@ -125,14 +148,11 @@ $payment_method = $checkout['payment_method'] ?? 'credit_card';
                                 <span>R <?php echo number_format($delivery_fee, 2); ?></span>
                             </div>
                             <div class="summary-row summary-total">
-                                <span>TOTAL</span>
+                                <span class="text-dark">TOTAL</span>
                                 <span>R <?php echo number_format($total_price, 2); ?></span>
                             </div>
 
-                            <button type="submit" class="tk-btn-green mt-3 mb-3">
-                                <i class="bi bi-lock-fill me-1"></i> Authorize & Pay R <?php echo number_format($total_price, 2); ?>
-                            </button>
-                            <div class="text-center text-muted small">
+                            <div class="text-center text-muted small mt-4 pt-3 border-top">
                                 <i class="bi bi-shield-check text-success"></i> Protected by SafeTrade Escrow
                             </div>
                         </div>
