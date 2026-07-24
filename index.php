@@ -30,6 +30,26 @@ require_once 'config/db.php';
         .shopify-nav-links a:hover {
             color: #008060;
         }
+        /* Stats inside Hero Section */
+        .hero-stats-box {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            margin-top: 40px;
+        }
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #121212;
+            margin-bottom: 2px;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: #6c757d;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -48,24 +68,24 @@ require_once 'config/db.php';
             </nav>
 
             <div class="d-flex align-items-center gap-3">
-                <a href="login.php" class="text-dark text-decoration-none fw-medium px-2">Log in</a>
+                <a href="seller/login.php" class="text-dark text-decoration-none fw-medium px-2">Log in</a>
                 <a href="seller/register.php" class="btn text-white px-4 py-2 rounded-pill fw-semibold" style="background-color: #008060;">Start for free</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section" style="background-color: #0d1b1e; color: #ffffff; min-height: 80vh; display: flex; align-items: center; position: relative; overflow: hidden; padding-bottom: 80px;">
+    <!-- Hero Section with Stats Inside -->
+    <section class="hero-section" style="background-color: #0d1b1e; color: #ffffff; min-height: 90vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 60px 0;">
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #0d1b1e 0%, #1a3a32 100%); opacity: 0.9; z-index: 1;"></div>
         
-        <div class="container py-5" style="position: relative; z-index: 2;">
+        <div class="container py-4" style="position: relative; z-index: 2;">
             <div class="row align-items-center">
-                <div class="col-lg-8 hero-content">
-                    <div class="hero-badge d-inline-flex align-items-center bg-white bg-opacity-10 border border-white border-opacity-20 px-3 py-1 rounded-pill small mb-4">
+                <div class="col-lg-9 hero-content">
+                    <div class="hero-badge d-inline-flex align-items-center bg-white bg-opacity-10 border border-white border-opacity-20 px-3 py-1 rounded-pill small mb-3">
                         <i class="bi bi-shield-check text-success me-2"></i> South Africa’s #1 Secure C2C Platform
                     </div>
                     
-                    <h1 class="hero-title fw-bold lh-1 mb-4" style="font-size: 3.5rem; letter-spacing: -0.03em; min-height: 140px;">
+                    <h1 class="hero-title fw-bold lh-1 mb-3" style="font-size: 3.2rem; letter-spacing: -0.03em; min-height: 130px;">
                         Be the next <span id="rotating-text" style="color: #008060;">all-star</span>.
                     </h1>
                     
@@ -73,38 +93,38 @@ require_once 'config/db.php';
                         Transact buyers safely, and grow your business with zero hassle.
                     </p>
                     
-                    <div class="hero-cta-group d-flex gap-3 mt-4">
-                        <a href="listing.php" class="btn text-white px-4 py-3 rounded-pill fw-semibold" style="background-color: #ff6600;">Browse Listings</a>
+                    <!-- Browse Listings and Sell an Item Buttons -->
+                    <div class="hero-cta-group d-flex flex-wrap gap-3 mb-4">
+                        <a href="listing.php" class="btn text-white px-4 py-3 rounded-pill fw-semibold shadow-sm" style="background-color: #ff6600;">Browse Listings</a>
                         <a href="seller/register.php" class="btn btn-outline-light px-4 py-3 rounded-pill fw-semibold">Sell an Item</a>
                     </div>
+
+                    <!-- Animated Stats Box right inside the hero view -->
+                    <div class="hero-stats-box">
+                        <div class="row text-center g-3">
+                            <div class="col-6 col-md-3">
+                                <div class="stat-number" data-target="4821">0</div>
+                                <div class="stat-label">Active Listings</div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-number" data-target="1340">0</div>
+                                <div class="stat-label">Verified Sellers</div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-number" data-target="28600" data-suffix="+">0</div>
+                                <div class="stat-label">Successful Trades</div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="stat-number" data-target="52">0</div>
+                                <div class="stat-label">Cities Covered</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Stats Counter Section with Animated Numbers -->
-    <div class="container mb-5">
-        <div class="stats-container">
-            <div class="row text-center g-4">
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="4821">0</div>
-                    <div class="stat-label">Active Listings</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="1340">0</div>
-                    <div class="stat-label">Verified Sellers</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="28600" data-suffix="+">0</div>
-                    <div class="stat-label">Successful Trades</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="52">0</div>
-                    <div class="stat-label">Cities Covered</div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Value Proposition Section -->
     <section class="py-5 bg-light">
@@ -164,7 +184,7 @@ require_once 'config/db.php';
             const target = +counter.getAttribute('data-target');
             const suffix = counter.getAttribute('data-suffix') || '';
             let count = 0;
-            const speed = target / 50; // Adjust speed of counting
+            const speed = target / 40;
 
             const updateCount = () => {
                 count += speed;
