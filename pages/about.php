@@ -16,10 +16,10 @@
     <!-- Minimal Header -->
     <header class="bg-white border-bottom py-3 sticky-top">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="../index.html">
-                <img src="../assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 40px; object-fit: contain;">
+            <a href="/SafeTradeSA/index.php">
+                <img src="/SafeTradeSA/assets/img/logo.png" alt="SafeTrade SA Logo" style="height: 40px; object-fit: contain;">
             </a>
-            <a href="index.html" class="text-secondary text-decoration-none fw-medium">Back to Home</a>
+            <a href="/SafeTradeSA/index.php" class="text-secondary text-decoration-none fw-medium">Back to Home</a>
         </div>
     </header>
 

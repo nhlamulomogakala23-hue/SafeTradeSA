@@ -53,8 +53,8 @@ include 'config/db.php';
                             <!-- Chat WhatsApp: opens WhatsApp with a pre-filled message -->
                             <a href="https://wa.me/YOUR_PHONE_NUMBER?text=I%20am%20interested%20in%20<?php echo urlencode($product['name']); ?>" target="_blank" class="btn btn-success">
                              <i class="bi bi-whatsapp"></i> Chat WhatsApp
-    </a>
-</div>
+                             </a>
+                                </div>
                             </div>
                         </div>
                     </div>

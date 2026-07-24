@@ -49,9 +49,6 @@
         </div>
     </div>
 
-    <div class="text-center mt-5 pt-4">
-        <a href="login.php" class="btn btn-dark btn-lg fw-bold px-5 py-3 shadow-sm">Start Safe Trading Now</a>
-    </div>
 </div>
 
 <?php include '../includes/footer.php'; ?>

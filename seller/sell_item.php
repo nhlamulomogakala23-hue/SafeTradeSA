@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 VALUES ('$name', '$price', '$description', '$image_path', 1, 1)";
         
         if (mysqli_query($conn, $sql)) {
-            header("Location: dashboard.php?success=item_added");
+            header("Location: /SafeTradeSA/seller/sell_item.php?success=item_added");
             exit();
         } else {
             $message = "<div class='alert alert-danger'>Database Error: " . mysqli_error($conn) . "</div>";
@@ -69,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <a href="../index.php" class="fw-bold text-dark text-decoration-none h4 mb-0">SafeTrade SA</a>
             <nav>
                 <a href="../listing.php" class="text-dark text-decoration-none mx-2">Browse</a>
-                <a href="dashboard.php" class="btn btn-outline-dark btn-sm ms-2">Dashboard</a>
+                <a href="/SafeTradeSA/seller/dashboard.php" class="btn btn-outline-dark btn-sm ms-2">Dashboard</a>
             </nav>
         </div>
     </header>
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
             <?php echo $message; ?>
 
-            <form action="sell_item.php" method="POST" enctype="multipart/form-data">
+            <form action="/SafeTradeSA/seller/sell_item.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label class="form-label fw-medium">Product / Item Name</label>
                     <input type="text" name="name" class="form-control" placeholder="e.g. Vintage Denim Jacket" required>
@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-primary btn-lg fw-bold">Publish Listing</button>
-                    <a href="dashboard.php" class="btn btn-outline-secondary">Cancel</a>
+                    <a href="/SafeTradeSA/seller/dashboard.php" class="btn btn-outline-secondary">Cancel</a>
                 </div>
             </form>
         </div>

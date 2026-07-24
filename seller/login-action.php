@@ -16,10 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: /SafeTradeSA/seller/sell_item.php"); // Go to your store
             exit();
         } else {
-            die("Incorrect password. <a href='/SafeTradeSA/pages/login.php'>Go back</a>");
+            die("Incorrect password. <a href='/SafeTradeSA/seller/login.php'>Go back</a>");
         }
     } else {
-        die("Email not found. <a href='/SafeTradeSA/pages/register.php'>Register here</a>");
+        die("Email not found. <a href='/SafeTradeSA/seller/register.php'>Register here</a>");
     }
 }
 ?>
