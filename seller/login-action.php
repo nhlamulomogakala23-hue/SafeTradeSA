@@ -31,12 +31,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: dashboard.php"); 
             exit();
         } else {
-            // Incorrect password
-            echo "Incorrect password. <a href='seller/login.php'>Go back</a>";
+            // Incorrect password - FIXED LINK
+            echo "Incorrect password. <a href='../login.php'>Go back</a>";
         }
     } else {
-        // User not found
-        echo "No account found with that email. <a href='seller/login.php'>Go back</a>";
+        // User not found - FIXED LINK
+        echo "No account found with that email. <a href='../login.php'>Go back</a>";
     }
 }
 ?>

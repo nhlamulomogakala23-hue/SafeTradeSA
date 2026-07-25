@@ -57,7 +57,7 @@
             <div class="col-lg-8">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4 class="fw-bold mb-0">Active Transactions</h4>
-                    <button class="btn fw-medium text-white px-3" style="background-color: #121212; border-radius: 4px;">+ New Trade</button>
+                    <a href="seller/sell_item.php" class="btn fw-medium text-white px-3" style="background-color: #121212; border-radius: 4px;">+ New Trade</a>
                 </div>
                 
                 <div class="card border-0 shadow-sm" style="border-radius: 8px;">
