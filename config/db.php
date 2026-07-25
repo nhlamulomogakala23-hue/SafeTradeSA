@@ -5,12 +5,12 @@
    ========================================== */
 
 // 1. Database Credentials
-$host     = '127.0.0.1';       // Usually '127.0.0.1' if running on XAMPP/MAMP/WAMP
+$host     = 'if0_42491490';       // Usually '127.0.0.1' if running on XAMPP/MAMP/WAMP
 $dbname   = 'safetradesa_db';    // The name of your database (change this if different)
 $username = 'root';            // Default local username
 $password = '';                // Default local password (leave empty for XAMPP, use 'root' for MAMP)
 
-$conn = mysqli_connect("127.0.0.1", "root", "", "safetradesa_db");
+$conn = mysqli_connect("if0_42491490", "root", "", "safetradesa_db");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
@@ -19,7 +19,7 @@ if (!$conn) {
 // 2. Create the Connection
 try {
     // We use PDO (PHP Data Objects) because it is the most secure way to prevent hackers (SQL Injection)
-    $pdo = new PDO("mysql:host=127.0.0.1;dbname=safetradesa_db;charset=utf8mb4", "root", "");
+    $pdo = new PDO("mysql:host=if0_42491490;dbname=safetradesa_db;charset=utf8mb4", "root", "");
     
     // 3. Set Error Modes
     // This tells the database to show us exact error messages if something goes wrong
