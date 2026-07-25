@@ -8,9 +8,9 @@
 $host     = 'sql208.infinityfree.com';       // Usually '127.0.0.1' if running on XAMPP/MAMP/WAMP
 $dbname   = 'if0_42491490_XXX';    // The name of your database (change this if different)
 $username = 'if0_42491490';            // Default local username
-$password = '';                // Default local password (leave empty for XAMPP, use 'root' for MAMP)
+$password = '7iRRcZCrjR';                // Default local password (leave empty for XAMPP, use 'root' for MAMP)
 
-$conn = mysqli_connect("sql208.infinityfree.com", "if0_42491490", "", "if0_42491490_XXX");
+$conn = mysqli_connect("sql208.infinityfree.com", "if0_42491490", "7iRRcZCrjR", "if0_42491490_XXX");
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
