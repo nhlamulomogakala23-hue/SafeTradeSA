@@ -22,7 +22,8 @@ if (!$conn) {
 // 2. Create the Connection
 try {
     // We use PDO (PHP Data Objects) because it is the most secure way to prevent hackers (SQL Injection)
-    $pdo = new PDO("mysql:host=sql208.infinityfree.com;dbname=if0_42491490_XXX;charset=utf8mb4", "if0_42491490", "");
+    // This tells the database to show us exact error messages if something goes wrong
+    $pdo = new PDO("mysql:host=sql208.infinityfree.com;dbname=if0_42491490_safetradesa;charset=utf8mb4", "if0_42491490", "7iRRcZCrjR    ");
 
     // 3. Set Error Modes
     // This tells the database to show us exact error messages if something goes wrong
